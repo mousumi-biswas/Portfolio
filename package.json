@@ -1,0 +1,29 @@
+{
+  "name": "mousumi_portfolio",
+  "version": "1.0.0",
+  "description": "Responsive Portfolio",
+  "main": "index.js",
+  "homepage": "https://mousumi2015.github.io/mousumi_portfolio",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive",
+    "deploy": "gh-pages -d dist"
+  },
+  "author": "Mousumi Biswas",
+  "license": "ISC",
+  "dependencies": {
+    "gh-pages": "^2.1.1",
+    "node-sass": "^4.12.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mousumi2015/mousumi_portfolio.git"
+  },
+  "keywords": [
+    "Responsive",
+    "Portfolio"
+  ],
+  "bugs": {
+    "url": "https://github.com/mousumi2015/mousumi_portfolio/issues"
+  }
+}
