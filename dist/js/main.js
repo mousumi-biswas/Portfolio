@@ -46,7 +46,7 @@ $("#contactForm").submit(function (e) {
     !phone.value ||
     !subject.value
   ) {
-    alertify.error("Please check your entries");
+    alert("Please check your entries");
   } else {
     $.ajax({
       method: "POST",
@@ -56,6 +56,6 @@ $("#contactForm").submit(function (e) {
     });
     e.preventDefault();
     $(this).get(0).reset();
-    alertify.success("Message sent");
+    alert("Message sent");
   }
 });
