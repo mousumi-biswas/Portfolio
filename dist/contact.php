@@ -11,8 +11,8 @@ if(empty($name) || empty($email) || empty($phone) || empty($subject)|| empty($me
         echo "Please fill all the fields";
 }
 else {
-        mail("optimistic.leo2020@gmail.com", subject, message);
-        echo "<script type='text/javascript'> alert('Your message sent successfully')
+        mail("optimistic.leo2020@gmail.com", "Web Message", $message, "From: $name <$email>");
+        echo "<script type='text/javascript'> alert('Your message sent successfully');
         window.history.log(-1);
         </script>";
 }
