@@ -51,7 +51,7 @@ $("#contactForm").submit(function (e) {
     $.ajax({
       method: "POST",
       url: "https://formspree.io/optimistic.leo2020@gmail.com",
-      data: $("#contactForm").serialize(),
+      data: $(this).serialize(),
       datatype: "json",
     });
     e.preventDefault();
