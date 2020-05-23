@@ -5,6 +5,7 @@
   "main": "index.js",
   "homepage": "https://mousumi2015.github.io/mousumi_portfolio",
   "scripts": {
+    "build": "npm run build",
     "sass": "node-sass -w scss/ -o dist/css/ --recursive",
     "deploy": "gh-pages -d dist"
   },

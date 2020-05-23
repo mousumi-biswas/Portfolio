@@ -57,16 +57,40 @@
       </h2>
       <!--contact form-->
 
-      <form id="contact-form" method="post" action="">
+      <form action="POST" data-netlify="true">
         <div class="contact-form">
           <div class="input-fields">
-            <input type="text" class="input" placeholder="Name" required />
-            <input type="text" class="input" placeholder="Email" required />
-            <input type="text" class="input" placeholder="Phone" required />
-            <input type="text" class="input" placeholder="Subject" required />
+            <input
+              type="text"
+              name="name"
+              class="input"
+              placeholder="Name"
+              required
+            />
+            <input
+              type="text"
+              name="email"
+              class="input"
+              placeholder="Email"
+              required
+            />
+            <input
+              type="text"
+              name="phone-number"
+              class="input"
+              placeholder="Phone"
+              required
+            />
+            <input
+              type="text"
+              name="subject"
+              class="input"
+              placeholder="Subject"
+              required
+            />
           </div>
           <div class="msg">
-            <textarea placeholder="Message"></textarea>
+            <textarea name="message" placeholder="Message"></textarea>
             <div class="btn">Send</div>
           </div>
         </div>
