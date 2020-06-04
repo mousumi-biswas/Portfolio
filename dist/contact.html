@@ -25,6 +25,9 @@
           <div class="portrait"></div>
         </div>
         <ul class="menu-nav">
+          <li class="nav-item current">
+            <a href="img/cv.pdf" class="nav-link">Resume</a>
+          </li>
           <li class="nav-item">
             <a href="index.html" class="nav-link">Home</a>
           </li>
@@ -56,12 +59,11 @@
         This Is How You Can Reach Me..
       </h2>
       <!--contact form-->
-      <form id="contactForm">
+      <form name="contactForm" method="POST" data-netlify="true">
         <div class="contact-form">
           <div class="input-fields">
             <input
               type="text"
-              id="inputName"
               name="name"
               class="input"
               placeholder="Name"
@@ -77,7 +79,6 @@
             />
             <input
               type="text"
-              id="inputPhone"
               name="phone-number"
               class="input"
               placeholder="Phone"
@@ -85,7 +86,6 @@
             />
             <input
               type="text"
-              id="inputSubject"
               name="subject"
               class="input"
               placeholder="Subject"
@@ -93,12 +93,8 @@
             />
           </div>
           <div class="msg">
-            <textarea
-              id="inputMessage"
-              name="message"
-              placeholder="Message"
-            ></textarea>
-            <input type="submit" id="submit" value="send" class="btn" />
+            <textarea name="message" placeholder="Message" required></textarea>
+            <input type="submit" value="send" class="btn" />
           </div>
         </div>
       </form>
@@ -112,6 +108,7 @@
     <!--End of footer-->
 
     <!--Script -->
+
     <script src="js/main.js"></script>
   </body>
 </html>
